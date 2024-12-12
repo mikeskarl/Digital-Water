@@ -1,0 +1,149 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.profile-header {
+    background-color: #005792;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.header-content h2 {
+    margin: 0.5rem 0;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.header-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.expertise-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 6px;
+    border-top: 3px solid #005792;
+}
+
+.expertise-card h3 {
+    color: #005792;
+    margin-top: 0;
+}
+
+.expertise-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.expertise-card li {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.expertise-card li:before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #005792;
+}
+
+.highlight-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.highlight-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 6px;
+    border-left: 4px solid #005792;
+}
+
+.highlight-card h3 {
+    color: #005792;
+    margin-top: 0;
+}
+
+.publications-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.publications-list li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #005792;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #333;
+    color: white;
+    margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    .profile-header {
+        padding: 2rem 1rem;
+    }
+
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .header-content h2 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+}
